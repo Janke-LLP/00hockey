@@ -44,6 +44,7 @@ DNS changes can take anywhere from a few minutes to a few hours to propagate.
 ## Things to update before launch
 
 - **Session dates/time** — currently Aug 25, Sep 1, Sep 8, 2026 at 8:00 pm Saskatchewan time, in `index.html`. Search for "Aug 25" to find all three.
+- **CTA button count** — both large "Register" buttons currently read "Register for Webinar 1 of 3." After each session airs, update to "2 of 3" then "3 of 3." Search for "Webinar 1 of 3" in `index.html` (each instance has an HTML comment right above it as a marker).
 - **Registration link** — the Microsoft Teams event URL is used in three places (nav, hero, and the register section). Search for `events.teams.microsoft.com` to update if it changes.
 - **Privacy and conduct guidelines** — the fine print near the register button references these; add real links once that copy exists.
 - **Heading font** — headings currently use Poppins (loaded from Google Fonts) as a stand-in for Gilroy, which isn't available as a free web font. To use real Gilroy, replace the Google Fonts `<link>` in `index.html` with self-hosted `@font-face` rules pointing at licensed Gilroy font files, and update `--font-heading` in `css/styles.css`.
