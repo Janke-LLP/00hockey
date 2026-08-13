@@ -6,10 +6,14 @@ A single static landing page for the "Helping Your Child Navigate Minor Hockey" 
 
 ```
 00hockey/
-├── index.html        the whole page
-├── css/styles.css     brand styles (colors, type, layout)
-└── README.md          this file
+├── index.html                          the landing page
+├── resume.html                         Scott's coaching background, as readable HTML
+├── css/styles.css                      brand styles (colors, type, layout), shared by both pages
+├── assets/Scott-Janke-Coaching-Resume.pdf   original resume PDF (linked as an optional download)
+└── README.md                           this file
 ```
+
+`resume.html` transcribes the resume content directly into the page rather than embedding the PDF, since that's a better experience on mobile and for screen readers. The PDF itself still lives in `assets/` and is linked near the bottom of the page for anyone who wants the original document.
 
 ## Preview it locally
 

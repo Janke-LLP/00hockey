@@ -222,6 +222,10 @@ a:focus-visible, button:focus-visible {
 .presenter-role { font-size: 12px; color: var(--sage); margin-bottom: 12px; }
 .presenter p:not(.presenter-role) { font-size: 15px; }
 
+.resume-link { margin-top: 16px; font-size: 14px; text-align: center; }
+.resume-link a { text-decoration: none; }
+.resume-link a:hover { color: var(--gold); }
+
 .chip-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
 .chip {
   font-size: 11px;
@@ -234,6 +238,75 @@ a:focus-visible, button:focus-visible {
 /* ===================== Register ===================== */
 .register-copy { max-width: 400px; margin: 0 auto 20px; font-size: 15px; }
 .fine-print { font-size: 12px; color: var(--sage); max-width: 400px; margin: 18px auto 0; }
+
+/* ===================== Resume page ===================== */
+.resume-page { text-align: left; }
+.resume-page > .eyebrow, .resume-page > h1 { text-align: center; }
+.resume-role { text-align: center; font-size: 14px; color: var(--sage); margin-bottom: 20px; }
+.resume-intro { max-width: 640px; margin: 0 auto 32px; font-size: 15px; }
+
+.quad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  max-width: 720px;
+  margin: 0 auto 40px;
+}
+.quad-grid .card p:last-child { font-size: 13px; margin-bottom: 0; }
+
+.resume-section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 32px;
+  border-top: 1px solid var(--stone);
+}
+.resume-section:first-of-type { border-top: none; }
+.resume-section h2 { font-size: 18px; margin-bottom: 18px; }
+.resume-section h3 { font-size: 14px; margin-bottom: 8px; }
+.resume-section ul { margin: 0 0 12px; padding-left: 20px; font-size: 14px; }
+.resume-section li { margin-bottom: 4px; }
+.resume-section > p { font-size: 14px; }
+
+.exp-item { margin-bottom: 20px; }
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.exp-years { color: var(--sage); font-weight: 500; font-size: 13px; white-space: nowrap; }
+
+.cred-note { font-size: 12px; color: var(--sage); margin-bottom: 20px; }
+.cred-group { margin-bottom: 20px; }
+
+.plain-list { padding-left: 20px; }
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.strength-item {
+  background: var(--stone);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+}
+
+.resume-references { max-width: 720px; margin: 32px auto 0; font-size: 13px; color: var(--sage); text-align: center; }
+.download-note { max-width: 720px; margin: 20px auto 0; font-size: 13px; text-align: center; }
+.download-note a { text-decoration: none; color: var(--sage); }
+.download-note a:hover { color: var(--gold); }
+.back-link { max-width: 720px; margin: 12px auto 0; font-size: 14px; text-align: center; }
+.back-link a { text-decoration: none; }
+.back-link a:hover { color: var(--gold); }
+
 
 /* ===================== Footer ===================== */
 footer {
