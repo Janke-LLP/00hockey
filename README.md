@@ -8,7 +8,9 @@ A single static landing page for the "Helping Your Child Navigate Minor Hockey" 
 00hockey/
 ├── index.html                          the landing page
 ├── resume.html                         Scott's coaching background, as readable HTML
-├── css/styles.css                      brand styles (colors, type, layout), shared by both pages
+├── lace-em-up.html                     Lace 'Em Up program page, with a registration form
+├── LACE_EM_UP_SETUP.md                 how to connect that form to a Google Sheet
+├── css/styles.css                      brand styles (colors, type, layout), shared by all pages
 ├── assets/Scott-Janke-Coaching-Resume.pdf   original resume PDF (linked as an optional download)
 └── README.md                           this file
 ```
@@ -49,6 +51,8 @@ DNS changes can take anywhere from a few minutes to a few hours to propagate.
 
 - **Session dates/time** — currently Aug 25, Sep 1, Sep 8, 2026 at 8:00 pm Saskatchewan time, in `index.html`. Search for "Aug 25" to find all three.
 - **CTA button count** — both large "Register" buttons currently read "Register for Webinar 1 of 3." After each session airs, update to "2 of 3" then "3 of 3." Search for "Webinar 1 of 3" in `index.html` (each instance has an HTML comment right above it as a marker).
+- **Lace 'Em Up form endpoint** — `lace-em-up.html` won't actually save any data until you complete the setup in `LACE_EM_UP_SETUP.md` and paste your Google Apps Script URL into the form's `action` attribute (currently a placeholder: `PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE`).
+- **Lace 'Em Up eligible birth years** — the page currently says "born in 2021, 2022, or 2023," estimated from last year's poster (which listed 2020/21/22 for the 2025 session). Confirm this is right before publishing.
 - **Registration link** — the Microsoft Teams event URL is used in three places (nav, hero, and the register section). Search for `events.teams.microsoft.com` to update if it changes.
 - **Privacy and conduct guidelines** — the fine print near the register button references these; add real links once that copy exists.
 - **Heading font** — headings currently use Poppins (loaded from Google Fonts) as a stand-in for Gilroy, which isn't available as a free web font. To use real Gilroy, replace the Google Fonts `<link>` in `index.html` with self-hosted `@font-face` rules pointing at licensed Gilroy font files, and update `--font-heading` in `css/styles.css`.

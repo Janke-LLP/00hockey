@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lace 'Em Up! | Zero:Zero Hockey</title>
+<meta name="description" content="A free pre-registration skate for young kids thinking about hockey or learning to skate. Tuesday, August 25, 2026, Tisdale RECplex.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header>
+  <div class="endorsement-bar">A Janke Family Foundation initiative</div>
+  <nav class="nav" aria-label="Primary">
+    <span class="wordmark">Zero:Zero Hockey</span>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#register">Register</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="lace-heading">
+    <p class="eyebrow eyebrow-on-dark">Free pre-registration skate</p>
+    <h1 id="lace-heading">Lace 'Em Up!</h1>
+    <p class="hero-copy">Want to learn to skate? Thinking about hockey? Need to try new equipment? Come for qualified coaching, help picking the right program, and fun and games — no experience needed.</p>
+    <div class="pill-row">
+      <span class="pill pill-solid">Free</span>
+      <span class="pill pill-outline">Tisdale RECplex</span>
+    </div>
+    <a class="btn btn-gold" href="#register">Reserve a spot</a>
+  </section>
+
+  <div class="motif" aria-hidden="true">
+    <svg viewBox="0 0 120 16" width="120" height="16">
+      <line x1="0" y1="8" x2="47" y2="8" stroke="#8FA093" stroke-width="1"/>
+      <circle cx="60" cy="8" r="6" fill="none" stroke="#C19548" stroke-width="1.5"/>
+      <line x1="73" y1="8" x2="120" y2="8" stroke="#8FA093" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <section class="band band-cream" aria-labelledby="details-heading">
+    <p class="eyebrow eyebrow-on-light">When and who</p>
+    <h2 id="details-heading">One session, this year</h2>
+    <div class="card-grid lace-details">
+      <article class="card">
+        <p class="card-label">Date &amp; time</p>
+        <p>Tuesday, August 25, 2026<br>5:45 – 6:30 pm</p>
+      </article>
+      <article class="card">
+        <p class="card-label">Location</p>
+        <p>Tisdale RECplex</p>
+      </article>
+      <article class="card">
+        <p class="card-label">Who it's for</p>
+        <!-- Best estimate based on last year's 2020/21/22 cohort — confirm before publishing -->
+        <p>Children born in 2021, 2022, or 2023</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="band band-stone" aria-labelledby="attend-heading">
+    <p class="eyebrow eyebrow-on-light">Should your child attend?</p>
+    <h2 id="attend-heading">Not sure which program fits?</h2>
+    <p class="attend-copy">Many parents aren't sure whether their 4- or 5-year-old should register for Tisdale Minor Hockey or the Learn to Skate programming offered by Skate Tisdale — or both. This pre-registration skate, plus program information on the night, helps you decide the right fit for your family.</p>
+    <p class="attend-note">Spots will first be allocated to children not previously registered with Tisdale Minor Hockey.</p>
+  </section>
+
+  <section class="band band-cream" id="register" aria-labelledby="register-heading">
+    <p class="eyebrow eyebrow-on-light">Registration</p>
+    <h2 id="register-heading">Reserve a spot</h2>
+    <p class="register-copy">Free for all participants, courtesy of the Janke Family Foundation. One entry per child, please.</p>
+
+    <form id="laceForm" class="lace-form" action="PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE" method="POST" target="hidden_iframe">
+
+      <!-- Honeypot field: real visitors never see or fill this in; bots often do -->
+      <div class="hp-field" aria-hidden="true">
+        <label for="website">Leave this field blank</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <div class="form-group">
+        <label for="playerName">Player's full name</label>
+        <input type="text" id="playerName" name="playerName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="playerDob">Player's date of birth</label>
+        <input type="date" id="playerDob" name="playerDob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="parentName">Parent or guardian name</label>
+        <input type="text" id="parentName" name="parentName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="parentEmail">Parent or guardian email</label>
+        <input type="email" id="parentEmail" name="parentEmail" required>
+      </div>
+
+      <div class="form-group">
+        <label for="parentPhone">Parent or guardian phone (optional)</label>
+        <input type="tel" id="parentPhone" name="parentPhone">
+      </div>
+
+      <label class="consent-label">
+        <input type="checkbox" name="consent" value="yes" required>
+        I consent to be contacted by email or phone about this registration.
+      </label>
+
+      <button type="submit" class="btn btn-gold form-submit">Reserve a spot</button>
+    </form>
+
+    <div id="formSuccess" class="form-success" role="status">
+      <p>Thanks — your spot is reserved! You'll hear from us by email before August 25.</p>
+    </div>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" title="form submission target" style="display:none;"></iframe>
+
+  </section>
+
+</main>
+
+<footer>
+  <p class="wordmark wordmark-light">Zero:Zero Hockey</p>
+  <p class="footer-endorsement">A Janke Family Foundation initiative</p>
+  <p class="footer-links"><a href="index.html">Home</a> &middot; <a href="index.html#register">Webinar series</a> &middot; <a href="lace-em-up.html">Lace 'Em Up</a></p>
+</footer>
+
+<script>
+  var formSubmitted = false;
+  document.getElementById('laceForm').addEventListener('submit', function () {
+    formSubmitted = true;
+  });
+  document.getElementById('hidden_iframe').addEventListener('load', function () {
+    if (formSubmitted) {
+      document.getElementById('laceForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  });
+</script>
+
+</body>
+</html>
